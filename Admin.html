@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard - FoodMate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lilita+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lilita+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" href="Admin.css">
+</head>
+<body>
+  <header>
+    <h1>Admin Dashboard</h1>
+    <p>Manage menus, view feedback, analyze trends</p>
+  </header>
+
+  <section class="dashboard">
+    <div class="card">
+      <h2>Menu Management (CRUD)</h2>
+      <form>
+        <label>Meal Type:</label>
+        <select><option>Breakfast</option><option>Lunch</option><option>Snacks</option><option>Dinner</option></select>
+        <label>Menu Item:</label>
+        <input type="text" placeholder="e.g., Idli, Rice, Chapati" />
+        <label>Diet Type:</label>
+        <select><option>Veg</option><option>Non-Veg</option></select>
+        <textarea placeholder="Add description or update here..."></textarea>
+        <button type="submit">Save</button>
+      </form>
+    </div>
+
+    <div class="card">
+      <h2>Student Feedback</h2>
+      <p>Filter by meal type or sentiment</p>
+      <select><option>All</option><option>Positive</option><option>Negative</option><option>Neutral</option></select>
+      <table>
+        <tr><th>Student</th><th>Feedback</th><th>Sentiment</th></tr>
+        <tr><td>Student A</td><td>Good lunch</td><td>Positive</td></tr>
+        <tr><td>Student B</td><td>Too spicy</td><td>Negative</td></tr>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2>Reports</h2>
+      <select>
+        <option>Daily</option>
+        <option>Weekly</option>
+        <option>Monthly</option>
+      </select>
+      <p class="placeholder">Report content placeholder</p>
+    </div>
+
+    <div class="card">
+      <h2>Sentiment Analysis</h2>
+      <p class="placeholder">AI-driven sentiment analysis of student feedback.</p>
+    </div>
+
+    <div class="card">
+      <h2>Attendance & Booking</h2>
+      <p class="placeholder">Display of today's meal bookings and attendance rates.</p>
+    </div>
+
+    <div class="card">
+      <h2>Food Wastage Alerts</h2>
+      <p class="placeholder">⚠ Alert: Dinner wastage high on 18th July.</p>
+    </div>
+
+    <div class="card">
+      <h2>Predictive Analysis</h2>
+      <p class="placeholder">Expected turnout for tomorrow: 430 students.</p>
+    </div>
+  </section>
+</body>
+</html>
