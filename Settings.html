@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Meal Booking</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings Page</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -15,54 +15,30 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lilita+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<link rel="stylesheet" href="Booking.css">
-</head>
+<link rel="stylesheet" href="Settings.css">
+  </head>
 <body>
+  <div class="settings-container">
+    <h2>Settings</h2>
+    <form>
+      <label for="email">Notification Email:</label>
+      <input type="email" id="email" name="email" placeholder="your@email.com" required>
 
-  <header>🍽 Meal Booking / Skip</header>
+      <label for="diet">Dietary Preferences:</label>
+      <select id="diet" name="diet">
+        <option value="none">None</option>
+        <option value="vegan">Vegan</option>
+        <option value="vegetarian">Vegetarian</option>
+        <option value="allergic">Allergic to specific items</option>
+      </select>
 
-  <div class="container">
-
-    <div class="section">
-      <h2>Upcoming Meals</h2>
-      <div class="meal-options">
-        <div class="meal-card">
-          <h3>Breakfast</h3>
-          <p>Time: 8:00 AM</p>
-          <button class="book-btn">Book</button>
-          <button class="skip-btn">Skip</button>
-        </div>
-        <div class="meal-card">
-          <h3>Lunch</h3>
-          <p>Time: 1:00 PM</p>
-          <button class="book-btn">Book</button>
-          <button class="skip-btn">Skip</button>
-        </div>
-        <div class="meal-card">
-          <h3>Dinner</h3>
-          <p>Time: 8:00 PM</p>
-          <button class="book-btn">Book</button>
-          <button class="skip-btn">Skip</button>
-        </div>
+      <div class="toggle-container">
+        <label for="darkMode">Dark Mode:</label>
+        <input type="checkbox" id="darkMode" name="darkMode">
       </div>
-    </div>
 
-    <div class="section">
-      <h2>🔔 Booking Reminders</h2>
-      <div class="reminder-box">
-        You will get a reminder notification 30 minutes before booking closes.
-        <br>Don’t forget to skip if you're not dining!
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>💰 Your Remaining Balance</h2>
-      <div class="balance-box">
-        ₹1,250.00 remaining for this month
-      </div>
-    </div>
-
+      <button type="submit">Save Settings</button>
+    </form>
   </div>
-
 </body>
 </html>
